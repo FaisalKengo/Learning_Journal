@@ -1,0 +1,1 @@
+print("Halo, nama saya Faisal Kengo. Mau dipanggil Faisal ataupun Kengo pun boleh")
