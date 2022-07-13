@@ -6,7 +6,5 @@ for i in range(len(numbers)):
         print(numbers[i])
         if numbers[i] == 918:
             break               #break diletakkan di sini agar loop masih dapat menampung nilai 918
-        else:
-            i = i + 1
 
 print("Done")
