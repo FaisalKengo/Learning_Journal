@@ -1,4 +1,4 @@
-tk = 0.0
+t_celsius = 0.0
 
 def ktoc(t_kelvin):
     "Konversi Kelvin -> Celsius"
@@ -30,18 +30,20 @@ def ftoc(t_fahrenheit):
     t_celsius = (t_fahrenheit - 32.0) * (5.0 / 9.0)
     return t_celsius
 
-tkc = ktoc(tk)
-print(f"{tk} K = {tkc} C")
-tck = ctok(tkc)
-print(f"{tkc} C = {tck} K")
-tkf = ktof(tck)
-print(f"{tck} K = {tkf} F")
-tcf = ctof(tkc)
-print(f"{tkc} C = {tcf} F")
-tfk = ftok(tkf)
-print(f"{tkf} F = {tfk} K")
-tfc = ftoc(tcf)
-print(f"{tcf} F = {tfc} C")
+t_celsiuskelvin = ctok(t_celsius)
+print(f"{t_celsius} C = {t_celsiuskelvin} K")
+t_kelvincelsius = ktoc(t_celsiuskelvin)
+print(f"{t_celsiuskelvin} K = {t_kelvincelsius} C")
+t_celsiusfahrenheit = ctof(t_kelvincelsius)
+print(f"{t_kelvincelsius} C = {t_celsiusfahrenheit} F")
+t_kelvinfahrenheit = ktof(t_celsiuskelvin)
+print(f"{t_celsiuskelvin} K = {t_kelvinfahrenheit} F")
+t_fahrenheitcelsius = ftoc(t_celsiusfahrenheit)
+print(f"{t_celsiusfahrenheit} F = {t_fahrenheitcelsius} C")
+t_fahrenheitkelvin = ftok(t_kelvinfahrenheit)
+print(f"{t_kelvinfahrenheit} F = {t_fahrenheitkelvin} K")
 
 #Saya masih belum kepikiran bagaimana caranya membuat supaya semua nilainya dinamis,
 #mengingat saya masih menetapkan tk sebagai konstanta awal.
+
+#Log_07142022_1330: Saya baru cek lagi, ternyata saya tidak boleh konversi langsung dari Kelvin ke Fahrenheit dan sebaliknya.
